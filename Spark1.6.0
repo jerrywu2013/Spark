@@ -1,1 +1,23 @@
+### Install Spark 1.6.0 on Ubuntu 14.04
+```
+sudo apt-get update
+sudo apt-get -y install openjdk-7-jdk
+sudo apt-get -y install scala
+wget http://www.us.apache.org/dist/spark/spark-1.6.0/spark-1.6.0-bin-hadoop2.6.tgz
+tar zxvf spark-*.tgz
+mv ~/spark*/ ~/spark
+cd spark
+./bin/sprak-shell
+```
+### Interactive with Spark
+```
+val sakanaFile = sc.textFile("README.md")
+sakanaFile.count()
+val lineWithSpark = sakanaFile.filter (line => line.contains("Spark"))
+linesWithSpark.count()
+linesWithSpark.collect()
+linesWithSpark.collect.foreach(println)
 
+```
+
+####127.0.0.1:4040

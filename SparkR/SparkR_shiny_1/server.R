@@ -2,7 +2,7 @@
 library(shiny)
 
 # Set the system environment variables
-Sys.setenv(SPARK_HOME = "C:\\Users\\rippleblue2002\\Downloads\\spark-1.6.0-bin-hadoop2.6\\spark-1.6.0-bin-hadoop2.6\\spark-1.6.0-bin-hadoop2.6")
+Sys.setenv(SPARK_HOME = "C:\spark")
 .libPaths(c(file.path(Sys.getenv("SPARK_HOME"), "R", "lib"), .libPaths()))
 
 #load the Sparkr library

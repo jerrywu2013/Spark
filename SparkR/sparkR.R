@@ -2,7 +2,7 @@
 #E-mail:jerry@mail.ntust.edu.tw
 
 
-Sys.setenv(SPARK_HOME = "C:\spark")
+Sys.setenv(SPARK_HOME = "C:\\spark")
 library(SparkR, lib.loc = c(file.path(Sys.getenv("SPARK_HOME"), "R", "lib")))
 library(SparkR)
 

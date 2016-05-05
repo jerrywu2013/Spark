@@ -2,7 +2,7 @@
 library(shiny)
 
 # Set the system environment variables
-Sys.setenv(SPARK_HOME = "C:\spark")
+Sys.setenv(SPARK_HOME = "C:\\spark")
 .libPaths(c(file.path(Sys.getenv("SPARK_HOME"), "R", "lib"), .libPaths()))
 
 #load the Sparkr library
